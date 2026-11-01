@@ -39,28 +39,28 @@ window.BRIX_CATALOG = {
     {
       id: "watch-01", number: "01", category: "watches", name: "BRIX Watch 01", subtitle: "تصميم يومي أنيق",
       price: 1250,
-      image: "https://i.pinimg.com/1200x/72/98/62/729862c5f443c59f7a765398a6368881.jpg",
+      image: "https://i.pinimg.com/736x/ab/42/7e/ab427e142498fbe5af5f1b30251e0527.jpg",
       description: "ساعة بتفاصيل متوازنة تجمع بين العملية والأناقة في كل يوم.",
       styling: "تكمل إطلالاتك الكاجوال والسمارت كاجوال بسهولة."
     },
     {
       id: "watch-02", number: "02", category: "watches", name: "BRIX Watch 02", subtitle: "تفاصيل عصرية واضحة",
       price: 1450,
-      image: "https://i.pinimg.com/1200x/6a/76/ec/6a76ecd2678c6c75047fcde2424f2252.jpg",
+      image: "https://i.pinimg.com/736x/84/45/da/8445dad848cd75a80876e8b4b7300fb8.jpg",
       description: "تصميم معاصر يضيف حضورًا مميزًا دون تكلف.",
       styling: "اختيار مناسب للعمل والخروجات والإطلالات اليومية."
     },
     {
       id: "watch-03", number: "03", category: "watches", name: "BRIX Watch 03", subtitle: "حضور جريء بتفاصيل دقيقة",
       price: 1650,
-      image: "https://i.pinimg.com/736x/d7/d2/6f/d7d26f69cc6218c91788911a32c90258.jpg",
+      image: "https://i.pinimg.com/1200x/6a/76/ec/6a76ecd2678c6c75047fcde2424f2252.jpg",
       description: "تفاصيل لافتة تمنح الساعة شخصية قوية ولمسة مختلفة.",
       styling: "تليق بالقطع الأساسية والألوان المحايدة."
     },
     {
       id: "watch-04", number: "04", category: "watches", name: "BRIX Watch 04", subtitle: "أناقة تناسب كل وقت",
       price: 1800,
-      image: "https://i.pinimg.com/736x/89/45/3f/89453f7234a269c8243ab89be9f785c6.jpg",
+      image: "https://i.pinimg.com/736x/d7/d2/6f/d7d26f69cc6218c91788911a32c90258.jpg",
       description: "تصميم أنيق يوازن بين الحضور الهادئ واللمسة العصرية.",
       styling: "قطعة سهلة التنسيق من النهار إلى المساء."
     },

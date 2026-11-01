@@ -10,7 +10,7 @@ Open `index.html` in a browser, or use VS Code Live Server. Product detail pages
 
 - Mobile-first homepage with separate shelves for 4 bracelets, 4 watches and 3 chains.
 - A separate detail view for every product (shared `product.html` template with a unique product ID).
-- Arabic product names, descriptions, styling notes and EGP prices.
+- English product names, concise Arabic product descriptions and styling notes, and EGP prices.
 - Product prices: bracelets EGP 450–600, watches EGP 1,250–1,800, chains EGP 400–500.
 - No Add to Bag button on the product cards; the add action appears on each product detail page.
 - Shopping bag persists between pages using localStorage.

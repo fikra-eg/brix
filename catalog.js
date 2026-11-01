@@ -28,7 +28,7 @@ const IMAGES = {
 
 window.BRIX_CATALOG = {
   whatsappNumber: "", // Add the number in international format without +, e.g. 201xxxxxxxxx
-  currency: "ج.م",
+  currency: "EGP",
   categories: [
     {
       id: "bracelets",
@@ -57,7 +57,7 @@ window.BRIX_CATALOG = {
       id: "bracelet-01",
       number: "01",
       category: "bracelets",
-      name: "سوار BRIX 01",
+      name: "BRIX Bracelet 01",
       subtitle: "تفاصيل هندسية بطابع جريء",
       price: 450,
       image:
@@ -71,7 +71,7 @@ window.BRIX_CATALOG = {
       id: "bracelet-02",
       number: "02",
       category: "bracelets",
-      name: "سوار BRIX 02",
+      name: "BRIX Bracelet 02",
       subtitle: "حضور هادئ وتفصيلة مميزة",
       price: 500,
       image:
@@ -84,7 +84,7 @@ window.BRIX_CATALOG = {
       id: "bracelet-03",
       number: "03",
       category: "bracelets",
-      name: "سوار BRIX 03",
+      name: "BRIX Bracelet 03",
       subtitle: "ستايل أسود بطابع قوي",
       price: 550,
       image:
@@ -98,7 +98,7 @@ window.BRIX_CATALOG = {
       id: "bracelet-04",
       number: "04",
       category: "bracelets",
-      name: "سوار BRIX 04",
+      name: "BRIX Bracelet 04",
       subtitle: "التفصيلة الأخيرة للإطلالة",
       price: 600,
       image:
@@ -112,7 +112,7 @@ window.BRIX_CATALOG = {
       id: "watch-01",
       number: "01",
       category: "watches",
-      name: "ساعة BRIX 01",
+      name: "BRIX Watch 01",
       subtitle: "تصميم يومي بحضور مميز",
       price: 1250,
       image:
@@ -125,7 +125,7 @@ window.BRIX_CATALOG = {
       id: "watch-02",
       number: "02",
       category: "watches",
-      name: "ساعة BRIX 02",
+      name: "BRIX Watch 02",
       subtitle: "تفاصيل واضحة وشكل معاصر",
       price: 1450,
       image:
@@ -139,7 +139,7 @@ window.BRIX_CATALOG = {
       id: "watch-03",
       number: "03",
       category: "watches",
-      name: "ساعة BRIX 03",
+      name: "BRIX Watch 03",
       subtitle: "طابع جريء ولمسة عصرية",
       price: 1650,
       image:
@@ -152,7 +152,7 @@ window.BRIX_CATALOG = {
       id: "watch-04",
       number: "04",
       category: "watches",
-      name: "ساعة BRIX 04",
+      name: "BRIX Watch 04",
       subtitle: "اختيار أنيق لكل يوم",
       price: 1800,
       image:
@@ -165,7 +165,7 @@ window.BRIX_CATALOG = {
       id: "chain-01",
       number: "01",
       category: "chains",
-      name: "سلسلة BRIX 01",
+      name: "BRIX Chain 01",
       subtitle: "تفصيلة بسيطة بحضور واضح",
       price: 400,
       image:
@@ -178,7 +178,7 @@ window.BRIX_CATALOG = {
       id: "chain-02",
       number: "02",
       category: "chains",
-      name: "سلسلة BRIX 02",
+      name: "BRIX Chain 02",
       subtitle: "ستايل رجالي بطابع معاصر",
       price: 450,
       image:
@@ -191,7 +191,7 @@ window.BRIX_CATALOG = {
       id: "chain-03",
       number: "03",
       category: "chains",
-      name: "سلسلة BRIX 03",
+      name: "BRIX Chain 03",
       subtitle: "اللمسة الأخيرة لإطلالتك",
       price: 500,
       image:

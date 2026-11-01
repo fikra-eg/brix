@@ -525,3 +525,48 @@ img { max-width: 100%; }
     transition-duration: .01ms !important;
   }
 }
+
+
+/* BRIX final polish: no artificial shadows and consistently smooth motion. */
+.product-image-wrap,
+.product-image-wrap:hover,
+.product-image,
+.product-card,
+.detail-main-image,
+.detail-main-image img,
+.statement-image img,
+.button,
+.button::before,
+.button::after,
+button,
+a,
+.mobile-menu,
+.cart-drawer,
+.drawer-backdrop,
+.toast,
+.product-details-link,
+.product-details-link span,
+.detail-add-button {
+  box-shadow: none !important;
+  filter: none !important;
+  transition-timing-function: cubic-bezier(.22, 1, .36, 1) !important;
+}
+.product-image-wrap,
+.product-card:hover .product-image-wrap,
+.detail-main-image,
+.detail-main-image:hover {
+  background: #fff !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+.product-image,
+.detail-main-image img {
+  box-shadow: none !important;
+  filter: none !important;
+  transition: transform 850ms cubic-bezier(.22, 1, .36, 1) !important;
+}
+.product-card:hover .product-image { transform: scale(1.035); }
+.detail-main-image:hover img { transform: scale(1.015); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

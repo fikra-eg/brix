@@ -18,21 +18,21 @@ window.BRIX_CATALOG = {
     {
       id: "bracelet-02", number: "02", category: "bracelets", name: "BRIX Bracelet 02", subtitle: "أناقة هادئة لكل يوم",
       price: 500,
-      image: "https://i.pinimg.com/736x/ab/42/7e/ab427e142498fbe5af5f1b30251e0527.jpg",
+      image: "https://i.pinimg.com/1200x/72/98/62/729862c5f443c59f7a765398a6368881.jpg",
       description: "تفاصيل متوازنة تمنح القطعة طابعًا أنيقًا وسهل التنسيق.",
       styling: "اختيار عملي مع الإطلالات الكاجوال والإكسسوارات المعدنية الأخرى."
     },
     {
       id: "bracelet-03", number: "03", category: "bracelets", name: "BRIX Bracelet 03", subtitle: "أسود بحضور مختلف",
       price: 550,
-      image: "https://i.pinimg.com/736x/84/45/da/8445dad848cd75a80876e8b4b7300fb8.jpg",
+      image: "https://i.pinimg.com/736x/89/45/3f/89453f7234a269c8243ab89be9f785c6.jpg",
       description: "لون أسود وتصميم واضح يمنحان إطلالتك لمسة قوية ومميزة.",
       styling: "يتناسق بسهولة مع الألوان الهادئة والملابس البسيطة."
     },
     {
       id: "bracelet-04", number: "04", category: "bracelets", name: "BRIX Bracelet 04", subtitle: "تفصيلة تلفت الانتباه",
       price: 600,
-      image: "https://i.pinimg.com/1200x/dd/9b/ee/dd9bee430a33296bd43bd5a955ead4bc.jpg",
+      image: "https://i.pinimg.com/1200x/39/f9/44/39f944285b024b201c9668002b907600.jpg",
       description: "قطعة لافتة بتصميم يعكس ذوقًا جريئًا ويكمل مظهرك بثقة.",
       styling: "ارتدِها بمفردها لتكون هي التفصيلة الأبرز في إطلالتك."
     },

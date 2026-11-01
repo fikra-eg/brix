@@ -20,7 +20,7 @@ Open `index.html` in a browser, or use VS Code Live Server. Product detail pages
 
 1. Add the BRIX WhatsApp number in `catalog.js` under `whatsappNumber` (international format without `+`, e.g. `201xxxxxxxxx`).
 2. Confirm product names, prices, availability and descriptions against the actual products.
-3. Image sources are the Pinterest CDN links supplied in the conversation. Pinterest returned HTTP 403 to the automated preview/download environment, so images remain linked externally instead of being copied into local assets. For a production site, save approved original image files in a local `assets/` folder and update the URLs in `js/catalog.js`.
+3. Image sources are the Pinterest CDN links supplied in the conversation. Pinterest returned HTTP 403 to the automated preview/download environment, so images remain linked externally instead of being copied into local assets. For a production site, save approved original image files in a local `assets/` folder and update the URLs in `catalog.js`.
 4. Confirm that each image is assigned to the right category before publishing. Current category grouping follows the requested final totals (4 bracelets, 4 watches, 3 chains); the image host prevented independent visual verification here.
 
 ## Scope

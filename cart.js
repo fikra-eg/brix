@@ -47,9 +47,9 @@
       itemsEl.innerHTML = `
         <div class="empty-cart">
           <span class="empty-mark">B.</span>
-          <p>حقيبتك لسه فاضية</p>
-          <span>اكتشف القطع اللي تكمل إطلالتك.</span>
-          <a href="index.html#collection" data-close-cart>اكتشف المجموعة ↗</a>
+          <p>YOUR BAG IS EMPTY</p>
+          <span>Find the piece that completes your look.</span>
+          <a href="index.html#collection" data-close-cart>EXPLORE THE COLLECTION ↗</a>
         </div>`;
       return;
     }
@@ -90,7 +90,7 @@
     cart.set(id, (cart.get(id) || 0) + 1);
     persistCart();
     render();
-    showToast("تمت إضافة القطعة إلى حقيبتك.");
+    showToast("Added to your bag.");
   }
 
   function update(id, change) {
@@ -145,16 +145,16 @@
   document.querySelector("[data-copy-order]")?.addEventListener("click", async () => {
     try {
       await navigator.clipboard.writeText(orderText());
-      showToast("تم نسخ تفاصيل الطلب.");
+      showToast("Order details copied.");
     } catch {
-      showToast("النسخ غير متاح في هذا المتصفح.");
+      showToast("Copy is not supported in this browser.");
     }
   });
 
   document.querySelector("[data-checkout]")?.addEventListener("click", () => {
     if (!cart.size) return;
     if (!catalog.whatsappNumber) {
-      showToast("أضف رقم واتساب البراند داخل js/catalog.js لتفعيل الطلب.");
+      showToast("Add the brand WhatsApp number in js/catalog.js to enable checkout.");
       return;
     }
     window.open(`https://wa.me/${catalog.whatsappNumber}?text=${encodeURIComponent(orderText())}`, "_blank", "noopener,noreferrer");

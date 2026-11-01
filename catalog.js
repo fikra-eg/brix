@@ -67,21 +67,21 @@ window.BRIX_CATALOG = {
     {
       id: "chain-01", number: "01", category: "chains", name: "BRIX Chain 01", subtitle: "بساطة بتفاصيل مميزة",
       price: 400,
-      image: "https://i.pinimg.com/1200x/39/f9/44/39f944285b024b201c9668002b907600.jpg",
+      image: "https://i.pinimg.com/736x/a2/0f/a7/a20fa72c30216ffbceba373592eef4c9.jpg",
       description: "سلسلة بتصميم نظيف تضيف لمسة أنيقة إلى إطلالتك.",
       styling: "تبدو مميزة بمفردها، أو ضمن تنسيق الطبقات."
     },
     {
       id: "chain-02", number: "02", category: "chains", name: "BRIX Chain 02", subtitle: "ستايل معاصر وواثق",
       price: 450,
-      image: "https://i.pinimg.com/736x/a2/0f/a7/a20fa72c30216ffbceba373592eef4c9.jpg",
+      image: "https://i.pinimg.com/1200x/5e/81/61/5e8161fe5143dca5fb66321510d0b916.jpg",
       description: "تفصيلة معدنية تضيف عمقًا للوك وتحافظ على بساطته.",
       styling: "نسّقها مع تيشيرت أو قميص مفتوح لإطلالة يومية."
     },
     {
       id: "chain-03", number: "03", category: "chains", name: "BRIX Chain 03", subtitle: "اللمسة الأخيرة للوك",
       price: 500,
-      image: "https://i.pinimg.com/1200x/5e/81/61/5e8161fe5143dca5fb66321510d0b916.jpg",
+      image: "https://i.pinimg.com/1200x/dd/9b/ee/dd9bee430a33296bd43bd5a955ead4bc.jpg",
       description: "تصميم أنيق يمنح إطلالتك حضورًا إضافيًا من دون مبالغة.",
       styling: "يمكن ارتداؤها بمفردها أو مع سلسلة أخرى متناسقة."
     }

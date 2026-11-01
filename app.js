@@ -14,11 +14,11 @@
         <div class="product-meta" dir="ltr">
           <div class="product-copy">
             <h3 class="product-name" dir="ltr">${product.name}</h3>
-            <p class="product-category" dir="rtl">${product.subtitle}</p>
+            <p class="product-category">${product.category}</p>
           </div>
           <span class="product-price" dir="rtl">${window.BRIX_CART?.formatPrice(product.price) || `${product.price} ${catalog.currency}`}</span>
         </div>
-        <span class="product-details-link" dir="rtl">اكتشف التفاصيل <span>↗</span></span>
+        <span class="product-details-link">VIEW DETAILS <span>↗</span></span>
       </a>`;
   }
 
@@ -39,13 +39,11 @@
           <div class="category-title-wrap">
             <span class="category-number">${category.number} / 03</span>
             <div>
-              <p class="category-kicker">${category.title}</p>
-              <h3 dir="rtl">${category.titleAr}<span>.</span></h3>
+              <h3 class="category-title-en">${category.title}</h3>
             </div>
           </div>
           <div class="category-heading-meta">
             <span class="category-total">${String(categoryProducts.length).padStart(2, "0")} PIECES</span>
-            <p class="category-note" dir="rtl">${category.note}</p>
           </div>
         </div>
         <div class="product-grid ${categoryProducts.length < 4 ? "product-grid-compact" : ""}">

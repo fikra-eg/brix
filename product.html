@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
+  <meta name="description" content="تفاصيل منتجات BRIX — إكسسوارات رجالي بتفاصيل تصنع الفرق." />
+  <title>BRIX — Product Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script defer src="./js/catalog.js"></script>
+  <script defer src="./js/cart.js"></script>
+  <script defer src="./js/product.js"></script>
+</head>
+<body class="product-page">
+  <div class="announcement"><span>THE EVERYDAY EDITION</span><span class="announcement-dot"></span><span>BUILT FOR YOUR OWN WAY</span></div>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="index.html" aria-label="BRIX home">BRIX<span class="wordmark-period">.</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html#collection">COLLECTION</a>
+      <a href="index.html#bracelets">BRACELETS</a>
+      <a href="index.html#watches">WATCHES</a>
+      <a href="index.html#chains">CHAINS</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button bag-trigger" type="button" aria-label="Open shopping bag" data-open-cart>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+        <span class="bag-count" data-cart-count>0</span>
+      </button>
+      <a class="back-home-mobile" href="index.html">العودة للمتجر</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="detail-breadcrumb" dir="rtl">
+      <a href="index.html">الرئيسية</a><span>/</span><a href="index.html#collection">المجموعة</a><span>/</span><span data-breadcrumb-category>التصنيف</span><span>/</span><strong data-breadcrumb-name>المنتج</strong>
+    </div>
+    <div data-product-detail>
+      <div class="detail-loading" dir="rtl">جاري تجهيز تفاصيل القطعة...</div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="index.html">BRIX<span class="wordmark-period">.</span></a>
+    <p>MEN'S ACCESSORIES<br /><span>MAKE YOUR MARK.</span></p>
+    <div class="footer-right"><a href="#top">BACK TO TOP ↑</a><span>© <span data-year></span> BRIX. ALL RIGHTS RESERVED.</span></div>
+  </footer>
+
+  <div class="drawer-backdrop" data-cart-backdrop></div>
+  <aside class="cart-drawer" aria-label="Shopping bag" aria-hidden="true" data-cart-drawer>
+    <div class="cart-header"><div><p class="eyebrow">YOUR SELECTION</p><h2>THE BAG <span data-cart-count>0</span></h2></div><button class="close-button" type="button" aria-label="Close shopping bag" data-close-cart>×</button></div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="cart-footer" data-cart-footer hidden>
+      <p dir="rtl">يتم تأكيد التوفر وتفاصيل الطلب مع فريق BRIX.</p>
+      <button class="button button-dark checkout-button" type="button" data-checkout>إتمام الطلب عبر واتساب <span>↗</span></button>
+      <button class="copy-order" type="button" data-copy-order>نسخ تفاصيل الطلب</button>
+    </div>
+  </aside>
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>

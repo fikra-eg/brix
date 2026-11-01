@@ -11,7 +11,7 @@
   let toastTimer;
 
   function formatPrice(value) {
-    return `${value.toLocaleString("ar-EG")} ${catalog.currency}`;
+    return `${value.toLocaleString("en-US")} ${catalog.currency}`;
   }
 
   function loadCart() {
@@ -59,16 +59,16 @@
       return `
         <div class="cart-item">
           <img src="${product.image}" alt="${product.name}" loading="lazy" referrerpolicy="no-referrer" />
-          <div class="cart-item-info" dir="rtl">
+          <div class="cart-item-info" dir="ltr">
             <h3>${product.name}</h3>
             <p>${formatPrice(product.price)}</p>
             <div class="quantity-control">
-              <button type="button" aria-label="تقليل الكمية" data-minus="${id}">−</button>
+              <button type="button" aria-label="Decrease quantity" data-minus="${id}">−</button>
               <span>${quantity}</span>
-              <button type="button" aria-label="زيادة الكمية" data-plus="${id}">+</button>
+              <button type="button" aria-label="Increase quantity" data-plus="${id}">+</button>
             </div>
           </div>
-          <button class="remove-item" type="button" data-remove="${id}">حذف</button>
+          <button class="remove-item" type="button" data-remove="${id}">REMOVE</button>
         </div>`;
     }).join("");
 
@@ -122,7 +122,7 @@
       const product = products.find(item => item.id === id);
       return `• ${product.name} — ${quantity} × ${formatPrice(product.price)}`;
     });
-    return `مرحبًا BRIX، أود طلب القطع التالية:\n${lines.join("\n")}\n\nالإجمالي: ${formatPrice([...cart.entries()].reduce((sum, [id, quantity]) => sum + products.find(p => p.id === id).price * quantity, 0))}`;
+    return `Hello BRIX, I would like to order the following items:\n${lines.join("\n")}\n\nTotal: ${formatPrice([...cart.entries()].reduce((sum, [id, quantity]) => sum + products.find(p => p.id === id).price * quantity, 0))}`;
   }
 
   document.querySelectorAll("[data-open-cart]").forEach(button => button.addEventListener("click", open));

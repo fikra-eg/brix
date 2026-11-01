@@ -5,18 +5,18 @@
 
   function imageMarkup(product) {
     return `
-      <a class="product-card" href="product.html?id=${encodeURIComponent(product.id)}" aria-label="عرض تفاصيل ${product.name}">
+      <a class="product-card" href="product.html?id=${encodeURIComponent(product.id)}" aria-label="View ${product.name} details">
         <div class="product-image-wrap">
           <img class="product-image" src="${product.image}" alt="${product.name}" loading="lazy" referrerpolicy="no-referrer" />
           <span class="product-number">BRIX / ${product.number}</span>
           <span class="product-image-index">↗</span>
         </div>
-        <div class="product-meta" dir="rtl">
+        <div class="product-meta" dir="ltr">
           <div class="product-copy">
-            <h3 class="product-name">${product.name}</h3>
-            <p class="product-category">${product.subtitle}</p>
+            <h3 class="product-name" dir="ltr">${product.name}</h3>
+            <p class="product-category" dir="rtl">${product.subtitle}</p>
           </div>
-          <span class="product-price">${window.BRIX_CART?.formatPrice(product.price) || `${product.price} ${catalog.currency}`}</span>
+          <span class="product-price" dir="rtl">${window.BRIX_CART?.formatPrice(product.price) || `${product.price} ${catalog.currency}`}</span>
         </div>
         <span class="product-details-link" dir="rtl">اكتشف التفاصيل <span>↗</span></span>
       </a>`;
@@ -32,9 +32,9 @@
   }
 
   categoryGroups.innerHTML = catalog.categories.map(category => {
-    const categoryProducts = products.filter(product => product.category === category.id);
+    const categoryProducts = products.filter(product => product.category === category.id).sort((a, b) => Number(a.number) - Number(b.number));
     return `
-      <section class="category-shelf reveal" id="${category.id}">
+      <section class="category-shelf reveal" id="${category.id}" data-category-shelf="${category.id}">
         <div class="category-heading">
           <div class="category-title-wrap">
             <span class="category-number">${category.number} / 03</span>
@@ -43,7 +43,10 @@
               <h3 dir="rtl">${category.titleAr}<span>.</span></h3>
             </div>
           </div>
-          <p class="category-note" dir="rtl">${category.note}</p>
+          <div class="category-heading-meta">
+            <span class="category-total">${String(categoryProducts.length).padStart(2, "0")} PIECES</span>
+            <p class="category-note" dir="rtl">${category.note}</p>
+          </div>
         </div>
         <div class="product-grid ${categoryProducts.length < 4 ? "product-grid-compact" : ""}">
           ${categoryProducts.map(imageMarkup).join("")}

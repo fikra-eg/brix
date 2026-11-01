@@ -570,3 +570,53 @@ a,
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+
+/* BRIX navigation motion: smooth same-site page changes and restrained entrances. */
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root) {
+  animation: brix-page-out 180ms cubic-bezier(.22, 1, .36, 1) both;
+}
+::view-transition-new(root) {
+  animation: brix-page-in 420ms cubic-bezier(.22, 1, .36, 1) both;
+}
+@keyframes brix-page-in {
+  from { opacity: 0; transform: translateY(7px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes brix-page-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h, 82px) + 18px);
+}
+a, button, .button, .icon-button, .menu-trigger {
+  -webkit-tap-highlight-color: transparent;
+}
+a, button, .button {
+  transition-duration: 280ms;
+  transition-timing-function: cubic-bezier(.22, 1, .36, 1);
+}
+.product-detail-layout .detail-image-column,
+.product-detail-layout .detail-copy-column,
+.detail-more {
+  animation: brix-content-in 560ms cubic-bezier(.22, 1, .36, 1) both;
+}
+.product-detail-layout .detail-copy-column { animation-delay: 70ms; }
+.detail-more { animation-delay: 120ms; }
+@keyframes brix-content-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  ::view-transition-old(root),
+  ::view-transition-new(root) { animation: none !important; }
+  .product-detail-layout .detail-image-column,
+  .product-detail-layout .detail-copy-column,
+  .detail-more { animation: none !important; }
+}

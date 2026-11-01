@@ -34,8 +34,8 @@
       </div>
       <div class="detail-copy-column">
         <p class="detail-kicker">${category.title} / BRIX OBJECT</p>
-        <h1>${product.name}</h1>
-        <p class="detail-subtitle">${product.subtitle}</p>
+        <h1 dir="ltr">${product.name}</h1>
+        <p class="detail-subtitle" dir="rtl">${product.subtitle}</p>
         <p class="detail-price">${formattedPrice}</p>
         <div class="detail-rule"></div>
         <div class="detail-description-block">
@@ -51,7 +51,7 @@
           <div><span>السعر</span><strong>${formattedPrice}</strong></div>
           <div><span>الكود</span><strong>BRIX-${product.category.slice(0, 1).toUpperCase()}${product.number}</strong></div>
         </div>
-        <button class="button button-dark detail-add-button" type="button" data-add-product="${product.id}">أضف إلى الحقيبة <span>＋</span></button>
+        <button class="button button-dark detail-add-button" type="button" data-add-product="${product.id}">ADD TO BAG <span>＋</span></button>
         <p class="detail-note">تأكيد التوفر وتفاصيل الطلب من خلال فريق BRIX.</p>
         <a class="detail-back-link" href="index.html#${product.category}">← العودة إلى ${category.titleAr}</a>
       </div>
